@@ -25,8 +25,14 @@ const SevenDayStreakComponent = () => {
   }, []);
 
   const renderStreakItem = ({ item }) => {
+    const initialOfWeek = moment(item, "YYYY-MM-DD")
+      .format("ddd")
+      .charAt(0)
+      .toUpperCase();
+
     return (
       <View style={styles.streakContainer}>
+        <Text style={styles.streakText}>{initialOfWeek}</Text>
         <View>
           <Image source={imageSource} />
         </View>
