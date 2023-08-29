@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, StyleSheet, Image, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  Image,
+  TouchableOpacity,
+  FlatList,
+} from "react-native";
 import workoutStreakData from "./workoutStreakData.json";
 import moment from "moment";
 
@@ -43,7 +50,14 @@ const SevenDayStreakComponent = () => {
   return (
     <View style={styles.container}>
       <View style={styles.streakRow}>
-        {workoutStreakData.streak.map((item) => renderStreakItem({ item }))}
+        <FlatList
+          data={workoutStreakData.streak}
+          scrollEnabled={false}
+          renderItem={renderStreakItem}
+          keyExtractor={(item) => item}
+          numColumns={7}
+          contentContainerStyle={{ flexGrow: 1 }}
+        />
       </View>
     </View>
   );
