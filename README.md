@@ -3,13 +3,11 @@
 ## Overview
 Design and implement a React Native component to display a 'Workout Streak'. The streak is a continuous string of days where a user successfully completes a workout.
 
-> ℹ️ Please commit often so that we know how you think
-
 
 **Acceptance Criteria:**
 
 1. **Streak Component:** Create a component to depict a Workout Streak over a span of 7 days.
-2. **Streak Days:** Streak days should always begin from the first day of the the streak, and proceed in a rolling seven-day period (see example scenarios below for the 9day streak).
+2. **Streak Days:** Streak days should always begin from the first day of the the streak, and proceed in a rolling seven-day period (see example scenarios below for the 9 day streak).
 3. **Current Day Highlight:** Current day should have a border.
 4. **'Perfect Week' Display:** On the completion of seven sequential workouts, introduce a 'Perfect Week' status.
     - Show the 'Perfect Week' status on each seventh consecutive day of the streak (i.e., Day 7, 14, 21, 28, etc.).
@@ -79,6 +77,11 @@ Here are some instances of the Streak component with varying streak lengths as p
 ![9 day Streak](./docs/assets/9-days-streak.png)
 
 ## Project Setup
+
+If you have not set up an expo app before you should follow the steps here
+
+https://docs.expo.dev/get-started/set-up-your-environment/?platform=ios&device=simulated
+
 - Clone the repository.
 - Execute `yarn install` to install the dependencies.
 - Launch the project with `yarn start`.
@@ -98,4 +101,3 @@ For bonus points, consider incorporating the following animations:
 
 ---
 Copyright [Bloom](https://usebloom.com) 2023 - all rights reserved
-If you find this test by yourself, you can apply by sending an email to ovi at usebloom dot com 
