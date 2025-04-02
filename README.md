@@ -86,6 +86,8 @@ https://docs.expo.dev/get-started/set-up-your-environment/?platform=ios&device=s
 - Execute `yarn install` to install the dependencies.
 - Launch the project with `yarn start`.
 
+you can then press "i" for example to launch the app in the ios simulator
+
 # ⭐️ Bonus: Animation Implementation
 
 For bonus points, consider incorporating the following animations:
